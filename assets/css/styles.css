@@ -1,0 +1,72 @@
+/*========== GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*========== VARIABLES CSS =========*/
+:root {
+  /*============ Colors ============*/
+  --body-color: hsl(212, 45%, 89%);
+  ----first-color: hsl(0, 0%, 100%);
+  --text-color-title: hsl(218, 44%, 22%);
+  --text-color-light: hsl(220, 15%, 55%);
+
+  /*====== Font and typography =====*/
+  --body-font: 'Outfit', sans-serif;
+  --big-font-size: 1.375rem;
+  --small-font-size: 0.9375rem;
+}
+
+/*=============== BASE =============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(----first-color);
+  padding: 1em;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0px 30px 50px 2px rgb(0 0 0 / 10%);
+}
+
+.card__img {
+  width: 100%;
+  max-width: 288px;
+  height: auto;
+}
+
+.card__body {
+  padding: 1.5em 1em;
+}
+
+.card__title {
+  color: var(--text-color-title);
+  font-size: var(--big-font-size);
+  font-weight: 700;
+}
+
+.card__text {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+}
+
+.card__img, .card {
+  border-radius: 1rem;
+}
